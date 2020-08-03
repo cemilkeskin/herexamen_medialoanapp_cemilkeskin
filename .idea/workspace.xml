@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="Testing git" />
+    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="Laravel default app made">
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +43,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fbNvLvxUpUyhZP6fJGVGrTLzQn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -32,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596483061761</updated>
-      <workItem from="1596483062779" duration="478000" />
+      <workItem from="1596483062779" duration="1659000" />
     </task>
     <task id="LOCAL-00001" summary="Testing git">
       <created>1596483135369</created>
@@ -41,21 +73,30 @@
       <option name="project" value="LOCAL" />
       <updated>1596483135369</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Laravel default app made">
+      <created>1596483691488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596483691488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Testing git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing git" />
+    <MESSAGE value="Laravel default app made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel default app made" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596483146338">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596483693545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596483146338" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596483693545" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

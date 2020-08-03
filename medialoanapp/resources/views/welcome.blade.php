@@ -81,7 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    @if(Auth::check())
+                        Laravel subscription {{Auth::user()->name}}
+                    @else
+                        Laravel entry edition
+                    @endif
                 </div>
 
                 <div class="links">
