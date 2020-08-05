@@ -14,9 +14,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'users'], function(){
+    Route::get('', [
+        'uses' => 'UserController@showUsers',
+        'as' => 'users'
+    ]);
+
+    Route::get('navigateUser', [
+        'uses' => 'UserController@navigateUser',
+        'as' => 'navigateUser'
+    ]);
+
+    Route::post('createUser', [
+        'uses' => 'UserController@createUser',
+        'as' => 'createUser'
+    ]);
+});
+
+//Route::get('/admin', 'UserController@index')
+//    ->middleware('is_admin')
+//    ->name('admin');

@@ -12,13 +12,18 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
             }
+
+    body{
+        background-image: url("{{url('/images/background.png')}}");
+        background-position: center;
+    }
 
             .full-height {
                 height: 100vh;
@@ -40,22 +45,56 @@
                 top: 18px;
             }
 
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
+            .logo > a {
+                color: #FFF;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 16px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+            }
+
+            .top-left {
+                position: absolute;
+                left: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+                margin-top: 600px;
+            }
+
+            .title {
+
+                color: #FFF;
+                padding: 0 25px;
+                font-size: 26px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .links > a {
+                color: #FFF;
+                padding: 0 25px;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+
+            }
+
+            a{
+                transition: 0.5s;
+            }
+            a:hover{
+
+                opacity: 0.60;
+
             }
 
             .m-b-md {
@@ -63,12 +102,18 @@
             }
         </style>
     </head>
+{{--    style="background-image: url('{{url('/images/background.png')}}')"--}}
     <body>
         <div class="flex-center position-ref full-height">
+
+            <div class="top-left logo">
+                <a href="{{ url('/') }}">Medialab</a>
+            </div>
+
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">My Medialab</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -82,22 +127,12 @@
             <div class="content">
                 <div class="title m-b-md">
                     @if(Auth::check())
-                        Laravel subscription {{Auth::user()->name}}
+                        Hello {{Auth::user()->name}}, let's get u loaded!
                     @else
-                        Laravel entry edition
+                        loan and enjoy, simple
                     @endif
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
             </div>
         </div>
     </body>

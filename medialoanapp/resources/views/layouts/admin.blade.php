@@ -19,26 +19,16 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<style>
-    .logo{
-        width: 15%;
-        transition: 0.5s;
-    }
-    .logo:hover{
-        transform: scale(0.95);
-        opacity: 0.60;
-    }
-</style>
 <body>
-    <div id="app">
+<div id="app">
 
-            @include('partials.header')
+    @include('partials.admin-header')
 
-        <main class="py-4">
+    <main class="py-4">
 
-            @yield('content')
+        @yield('content')
 
-        </main>
-    </div>
+    </main>
+</div>
 </body>
 </html>

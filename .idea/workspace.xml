@@ -1,34 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="Laravel default app made">
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" afterDir="false" />
+    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="Laravel login gegevens opslaan in database met standaard role 'user' en  auth check">
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/background2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/medialab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/admin/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/admin/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/admin/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/admin-home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/createuser.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/user.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/other/about.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/partials/admin-header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/partials/error.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/partials/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Medialoanapp_Werkstuk_Cemil.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Medialoanapp_Werkstuk_Cemil.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +57,117 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/medialoanapp/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/composer" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/medialoanapp/vendor/phpunit/php-text-template" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1fbNvLvxUpUyhZP6fJGVGrTLzQn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -54,7 +181,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/medialoanapp/public" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\admin" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\other" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\partials" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public\images" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\layouts" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\content" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,7 +206,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596483061761</updated>
-      <workItem from="1596483062779" duration="1659000" />
+      <workItem from="1596483062779" duration="1730000" />
+      <workItem from="1596558511204" duration="9249000" />
+      <workItem from="1596649220453" duration="4744000" />
+      <workItem from="1596656896366" duration="12057000" />
     </task>
     <task id="LOCAL-00001" summary="Testing git">
       <created>1596483135369</created>
@@ -80,23 +225,55 @@
       <option name="project" value="LOCAL" />
       <updated>1596483691488</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Laravel login gegevens opslaan in database met standaard role 'user' en  auth check">
+      <created>1596484777376</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596484777376</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Testing git" />
     <MESSAGE value="Laravel default app made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel default app made" />
+    <MESSAGE value="Laravel login gegevens opslaan in database met standaard role 'user' en  auth check" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel login gegevens opslaan in database met standaard role 'user' en  auth check" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596483693545">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596566011403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596483693545" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596566011403" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596650362921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596650362921" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596649222379">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596649222379" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596484780510">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596484780510" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
