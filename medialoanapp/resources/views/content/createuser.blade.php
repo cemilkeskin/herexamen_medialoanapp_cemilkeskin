@@ -3,6 +3,11 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
+            <a href="{{ route('users') }}">
+                <img class="arrow" src="{{url('/images/arrow.svg')}}" alt="">
+            </a>
+
+
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">{{ __('Create user') }}</div>
@@ -18,6 +23,7 @@
                                     </div>
                                 @endif
                                 <h3 class="card-title">Create an user by filling up the form</h3>
+                            <br>
 
                             <div class="form-group">
                                 <label for="name" >{{ __('Name') }}</label>
@@ -62,8 +68,7 @@
                             </div>
 
 
-
-
+                            <br>
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('Create user') }}
                                     </button>

@@ -87,18 +87,44 @@
                 text-transform: uppercase;
 
             }
+            /*a:hover{*/
 
-            a{
-                transition: 0.5s;
-            }
-            a:hover{
+            /*    opacity: 0.60;*/
 
-                opacity: 0.60;
+            /*}*/
 
-            }
+            /*a:after {*/
+            /*    content: "";*/
+            /*    display: block;*/
+            /*    width: 0;*/
+            /*    border-bottom: 3px solid;*/
+            /*    margin: 4px auto;*/
+            /*    transition:all 0.5s ease-in-out ;*/
+            /*}*/
+
+            /*a:hover:after {*/
+            /*    width: 75%;*/
+            /*}*/
 
             .m-b-md {
                 margin-bottom: 30px;
+            }
+            .ahome{
+                position: absolute;
+
+            }
+
+            .arrowhome{
+                position: absolute;
+                width: 100px;
+                margin-left: 50px;
+                transition: 0.5s ease;
+            }
+
+            .arrowhome:hover{
+                transform: translateX(50px);
+                cursor:pointer;
+
             }
         </style>
     </head>
@@ -128,6 +154,9 @@
                 <div class="title m-b-md">
                     @if(Auth::check())
                         Hello {{Auth::user()->name}}, let's get u loaded!
+                        <a class="ahome" href="{{route('home')}}">
+                        <img class="arrowhome" src="{{url('/images/arrowhome.svg')}}" alt="">
+                        </a>
                     @else
                         loan and enjoy, simple
                     @endif

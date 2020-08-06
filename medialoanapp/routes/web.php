@@ -36,6 +36,21 @@ Route::group(['prefix' => 'users'], function(){
         'uses' => 'UserController@createUser',
         'as' => 'createUser'
     ]);
+
+    Route::get('navigateEdit/{id}', [
+        'uses' => 'UserController@navigateEdit',
+        'as' => 'navigateEdit'
+    ]);
+
+    Route::post('editUser/{id}', [
+        'uses' => 'UserController@editUser',
+        'as' => 'editUser'
+    ]);
+
+    Route::get('deleteUser/{id}', [
+        'uses' => 'UserController@deleteUser',
+        'as' => 'deleteUser'
+    ]);
 });
 
 //Route::get('/admin', 'UserController@index')
