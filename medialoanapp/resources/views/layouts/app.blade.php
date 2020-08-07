@@ -80,7 +80,52 @@
         right: 390px;
 
     }
+.card-text{
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 115px;
+}
+.card-small{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-left: 25px;
+    margin-top: 25px;
+}
 
+.card-img-small{
+    position: absolute;
+    width: 11%;
+    right: -10px;
+    top: -140px;
+    transition: 0.5s;
+}
+
+    .card-img-small:hover{
+        transform: scale(0.94);
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+
+
+
+/*.container{*/
+/*    max-width: 1200px;*/
+/*}*/
+
+/*    .card{*/
+/*        display: inline-block;*/
+/*        margin-right: 30px;*/
+/*        margin-bottom: 30px;*/
+/*    }*/
 
     nav{
         background-image: url("{{url('/images/background.png')}}");

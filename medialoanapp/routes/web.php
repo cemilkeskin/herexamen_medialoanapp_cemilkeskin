@@ -53,6 +53,38 @@ Route::group(['prefix' => 'users'], function(){
     ]);
 });
 
+Route::group(['prefix' => 'items'], function(){
+    Route::get('', [
+        'uses' => 'ItemController@showItems',
+        'as' => 'items'
+    ]);
+
+    Route::get('navigateCreate', [
+        'uses' => 'ItemController@navigateCreate',
+        'as' => 'navigateCreate'
+    ]);
+
+    Route::post('createItem', [
+        'uses' => 'ItemController@createItem',
+        'as' => 'createItem'
+    ]);
+
+    Route::get('deleteItem/{id}', [
+        'uses' => 'ItemController@deleteItem',
+        'as' => 'deleteItem'
+    ]);
+
+    Route::get('navigateEditItem/{id}', [
+        'uses' => 'ItemController@navigateEditItem',
+        'as' => 'navigateEditItem'
+    ]);
+
+    Route::post('editItem/{id}', [
+        'uses' => 'ItemController@editItem',
+        'as' => 'editItem'
+    ]);
+});
+
 //Route::get('/admin', 'UserController@index')
 //    ->middleware('is_admin')
 //    ->name('admin');

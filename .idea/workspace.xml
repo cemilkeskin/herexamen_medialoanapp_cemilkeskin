@@ -19,20 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="Homepage design, admin dashboard create users en read users">
-      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/arrowhome.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/cancel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/logowhite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/navbarbackg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/edituser.blade.php" afterDir="false" />
+    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="Homepage design, admin dashboard uitgebreid: update users en delete users (route met id doorsturen) role veranderen, user log, backbutton,...">
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/ItemController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Item.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2020_08_07_133012_create_items_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/more.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/createitem.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/edititem.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/createuser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/createuser.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/edituser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/edituser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/routes/web.php" afterDir="false" />
     </list>
@@ -169,17 +171,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public\images" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\layouts" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\content" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\admin" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\other" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\partials" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public\images" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\layouts" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\content" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -194,7 +196,10 @@
       <workItem from="1596558511204" duration="9249000" />
       <workItem from="1596649220453" duration="4744000" />
       <workItem from="1596656896366" duration="12480000" />
-      <workItem from="1596722752054" duration="11040000" />
+      <workItem from="1596722752054" duration="11356000" />
+      <workItem from="1596737566851" duration="603000" />
+      <workItem from="1596748300553" duration="4000" />
+      <workItem from="1596805193120" duration="14309000" />
     </task>
     <task id="LOCAL-00001" summary="Testing git">
       <created>1596483135369</created>
@@ -224,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596671074988</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Homepage design, admin dashboard uitgebreid: update users en delete users (route met id doorsturen) role veranderen, user log, backbutton,...">
+      <created>1596736308698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596736308698</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,17 +260,22 @@
     <MESSAGE value="Laravel default app made" />
     <MESSAGE value="Laravel login gegevens opslaan in database met standaard role 'user' en  auth check" />
     <MESSAGE value="Homepage design, admin dashboard create users en read users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Homepage design, admin dashboard create users en read users" />
+    <MESSAGE value="Homepage design, admin dashboard uitgebreid: update users en delete users (route met id doorsturen) role veranderen, user log, backbutton,..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Homepage design, admin dashboard uitgebreid: update users en delete users (route met id doorsturen) role veranderen, user log, backbutton,..." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596810518018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596810518018" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596566011403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596566011403" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596650362921">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596821228054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596650362921" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596821228054" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596649222379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -267,17 +284,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596728259807" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596671079545">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596736313069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596671079545" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596736313069" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596483096571" />
-    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596726784160">
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596817097234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596726784160" />
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596817097234" />
   </component>
 </project>

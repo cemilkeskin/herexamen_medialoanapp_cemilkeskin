@@ -24,6 +24,7 @@ class UserController extends Controller
 
     public function createUser(Request $req)
     {
+        $this->authorize('admin');
         User::create([
             'name' => $req->name,
             'email' => $req->email,
@@ -70,6 +71,7 @@ class UserController extends Controller
 
     public function deleteUser($id)
     {
+        $this->authorize('admin');
         $users = User::find($id);
         $users->delete();
         return redirect('/users');
