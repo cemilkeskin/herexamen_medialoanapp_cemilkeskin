@@ -7,12 +7,13 @@ use Illuminate\Http\Request;
 use Input;
 
 
+
 class ItemController extends Controller
 {
     //
     public function showItems()
     {
-        $this->authorize('uitleendienst');
+        $this->authorize('items');
         $items = Item::all();
         return view('content.item', ['items' => $items]);
     }
@@ -73,7 +74,7 @@ class ItemController extends Controller
         $items = Item::find($id);
         $items->name =  $req->get('name');
         $items->packageitems = $req->get('packageitems');
-        $items->instructions = bcrypt($req->get('instructions'));
+        $items->instructions = $req->get('instructions');
         $items->description = $req->get('description');
         $items->additionalinfo = $req->get('additionalinfo');
         $items->itemsleft = $req->get('itemsleft');
@@ -82,4 +83,12 @@ class ItemController extends Controller
 
         return redirect('/items');
     }
+
+    public function navigateItem($id)
+    {
+        $this->authorize('user');
+        $items = Item::find($id);
+        return view('content.navigateitem', ['items' => $items]);
+    }
+
 }

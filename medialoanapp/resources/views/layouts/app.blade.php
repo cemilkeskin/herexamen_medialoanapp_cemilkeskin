@@ -12,6 +12,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -41,6 +42,23 @@
     }
 
     .arrow:hover{
+        cursor:pointer;
+        color: darkred;
+        transform: scale(0.92);
+        opacity: 0.60;
+    }
+
+    .arrow2{
+        width: 30px;
+        position: absolute;
+        top: 150px;
+        left: 300px;
+        color: red;
+        fill: currentColor;
+        transition: 0.5s;
+    }
+
+    .arrow2:hover{
         cursor:pointer;
         color: darkred;
         transform: scale(0.92);
@@ -80,11 +98,31 @@
         right: 390px;
 
     }
+
+    .readmore{
+        margin-top: -50px;
+    }
+
+    .figure{
+       width: 55%;
+    }
+
+    #disabled{
+        cursor: not-allowed;
+        pointer-events: none;
+
+    }
+
+    .card-title{
+        font-weight: bold;
+    }
+
+    .containerRight{
+        float: right;
+        width: 40%;
+    }
 .card-text{
-    white-space: pre-wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 115px;
+   margin-bottom: 5px;
 }
 .card-small{
     position: relative;

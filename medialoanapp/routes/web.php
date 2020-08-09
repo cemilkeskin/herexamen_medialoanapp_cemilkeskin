@@ -83,6 +83,20 @@ Route::group(['prefix' => 'items'], function(){
         'uses' => 'ItemController@editItem',
         'as' => 'editItem'
     ]);
+
+    Route::get('navigateItem/{id}', [
+        'uses' => 'ItemController@navigateItem',
+        'as' => 'navigateItem'
+    ]);
+});
+
+Route::group(['prefix' => 'loans'], function(){
+    Route::post('createLoan/{id}{id2}', [
+        'uses' => 'LoanController@createLoan',
+        'as' => 'createLoan'
+    ]);
+
+
 });
 
 //Route::get('/admin', 'UserController@index')

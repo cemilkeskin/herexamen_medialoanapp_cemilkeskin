@@ -49,6 +49,14 @@ class AuthServiceProvider extends ServiceProvider
             }
         });
 
+        Gate::define('items', function ($user) {
+            if ($user->role == 'uitleendienst'  || $user->role == 'user' || $user->role == 'admin' ) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+
         //
     }
 }
