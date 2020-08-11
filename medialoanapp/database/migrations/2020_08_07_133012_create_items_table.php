@@ -19,7 +19,7 @@ class CreateItemsTable extends Migration
             $table->string('picture');
             $table->string('packageitems');
             $table->string('instructions');
-            $table->string('status');
+            $table->string('status')->default('available');;
             $table->string('description');
             $table->string('additionalinfo');
             $table->string('itemsleft');

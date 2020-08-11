@@ -16,7 +16,7 @@ class CreateLoansTable extends Migration
         Schema::create('loans', function (Blueprint $table) {
             $table->id();
             $table->string('userID');
-            $table->string('email');
+            $table->string('email')->unique(); 
             $table->string('itemID');
             $table->string('name');
             $table->string('dateStart');

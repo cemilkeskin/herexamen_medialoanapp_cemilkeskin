@@ -19,17 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="Uitleendienst gemaakt CRUD acties ALLES gemaakt, detailed pagina nog maken wanneer je op de kaart drukt, BOOTSTRAP ROCKS">
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/LoanController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/app/Loan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2020_08_09_154319_create_loans_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/pdf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/navigateitem.blade.php" afterDir="false" />
+    <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="USER FOCUSED UPDATE: items page voor uitleendienst en user gemaakt, uitleendienst kan niet op loan drukken maar user wel, user kan een item lenen, DATA KAN NIET GEMANIPULEERD WORDEN, alles wordt direct van databank genomen">
+      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/arrowBlue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/allLoans.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/loan.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/ItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/LoanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/LoanController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/database/migrations/2020_08_07_133012_create_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2020_08_07_133012_create_items_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/database/migrations/2020_08_09_154319_create_loans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/database/migrations/2020_08_09_154319_create_loans_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/public/images/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/public/images/arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/navigateitem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/navigateitem.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/routes/web.php" afterDir="false" />
     </list>
@@ -166,17 +167,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public\images" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\layouts" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\content" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\admin" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\other" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\partials" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public\images" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\layouts" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\content" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -196,7 +197,9 @@
       <workItem from="1596748300553" duration="4000" />
       <workItem from="1596805193120" duration="14424000" />
       <workItem from="1596898960182" duration="6954000" />
-      <workItem from="1596977802150" duration="9660000" />
+      <workItem from="1596977802150" duration="10366000" />
+      <workItem from="1597018176530" duration="7000" />
+      <workItem from="1597148556606" duration="20207000" />
     </task>
     <task id="LOCAL-00001" summary="Testing git">
       <created>1596483135369</created>
@@ -240,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596821552220</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="USER FOCUSED UPDATE: items page voor uitleendienst en user gemaakt, uitleendienst kan niet op loan drukken maar user wel, user kan een item lenen, DATA KAN NIET GEMANIPULEERD WORDEN, alles wordt direct van databank genomen">
+      <created>1596991466742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596991466742</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +276,8 @@
     <MESSAGE value="Homepage design, admin dashboard create users en read users" />
     <MESSAGE value="Homepage design, admin dashboard uitgebreid: update users en delete users (route met id doorsturen) role veranderen, user log, backbutton,..." />
     <MESSAGE value="Uitleendienst gemaakt CRUD acties ALLES gemaakt, detailed pagina nog maken wanneer je op de kaart drukt, BOOTSTRAP ROCKS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uitleendienst gemaakt CRUD acties ALLES gemaakt, detailed pagina nog maken wanneer je op de kaart drukt, BOOTSTRAP ROCKS" />
+    <MESSAGE value="USER FOCUSED UPDATE: items page voor uitleendienst en user gemaakt, uitleendienst kan niet op loan drukken maar user wel, user kan een item lenen, DATA KAN NIET GEMANIPULEERD WORDEN, alles wordt direct van databank genomen" />
+    <option name="LAST_COMMIT_MESSAGE" value="USER FOCUSED UPDATE: items page voor uitleendienst en user gemaakt, uitleendienst kan niet op loan drukken maar user wel, user kan een item lenen, DATA KAN NIET GEMANIPULEERD WORDEN, alles wordt direct van databank genomen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596810518018">
@@ -289,10 +300,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596728259807" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596821553681">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596991469004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596821553681" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596991469004" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

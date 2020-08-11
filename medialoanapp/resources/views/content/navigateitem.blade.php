@@ -2,12 +2,31 @@
 
 @section('content')
     @can('user')
+
         <a href="{{ route('items') }}">
             <img class="arrow2" src="{{url('/images/arrow.svg')}}" alt="">
         </a>
 
         <div class="container">
             <br>
+
+            @if(session()->has('message'))
+{{--                <div class="alert alert-danger {{session('alert') ?? 'alert-info'}}">--}}
+{{--                    {{ session('message') }}--}}
+{{--                </div>--}}
+
+                <div class="alert alert-danger alert-dismissible fade show" role="alert {{session('alert') ?? 'alert-info'}}">
+                    <strong>Holy guacamole!</strong>  {{ session('message') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <br>
+
+                {{--            <div class="alert alert-danger">--}}
+                {{--                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.--}}
+                {{--            </div>--}}
+            @endif
 
         <figure class="figure">
             <img src="{{url('/images/background.png')}}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">

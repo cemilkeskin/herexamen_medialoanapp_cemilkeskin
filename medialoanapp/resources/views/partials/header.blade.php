@@ -36,11 +36,17 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('items') }}">{{ __('Items') }}</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('showUserLoans') }}">{{ __('Loans') }}</a>
+                            </li>
                         @endcan
 
                         @can('user')
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('items') }}">{{ __('Items') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('loans', Auth::user()->email) }}">{{ __('My Loans') }}</a>
                             </li>
                         @endcan
                     <li class="nav-item dropdown">

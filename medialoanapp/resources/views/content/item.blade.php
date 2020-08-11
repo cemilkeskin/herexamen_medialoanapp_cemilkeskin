@@ -3,14 +3,34 @@
 @section('content')
 
     <div class="container">
-    <div class="input-group">
+        @if(session()->has('message'))
+
+            {{--                <div class="alert alert-danger {{session('alert') ?? 'alert-info'}}">--}}
+            {{--                    {{ session('message') }}--}}
+            {{--                </div>--}}
+
+            <div class="alert {{session('alert') ?? 'alert-info'}} fade show" role="alert ">
+                <strong>Firm handshakes!</strong>  {{ session('message') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <br>
+
+            {{--            <div class="alert alert-danger">--}}
+            {{--                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.--}}
+            {{--            </div>--}}
+        @endif
+
+        <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text" id="">Search an item</span>
         </div>
         <input type="text" class="form-control">
 
     </div>
-    <br>
+
+
     @foreach($items as $item)
 
         <div class="card-small" style="width: 15rem;">
