@@ -39,7 +39,7 @@ class ItemController extends Controller
                 'picture' => $req->picture,
             ]);
 
-        return redirect()->action('ItemController@showItems');
+        return redirect()->action('ItemController@showItems')->with(['message' => 'The desired item has been successfully created.', 'alert' => 'alert-success']);;
     }
 
     public function deleteItem($id)
@@ -47,7 +47,7 @@ class ItemController extends Controller
         $this->authorize('uitleendienst');
         $items = Item::find($id);
         $items->delete();
-        return redirect('/items');
+        return redirect()->action('ItemController@showItems')->with(['message' => 'The desired item has been successfully deleted.', 'alert' => 'alert-danger']);;
     }
 
     public function navigateEditItem($id)
@@ -81,7 +81,7 @@ class ItemController extends Controller
         $items->picture = $req->get('picture');
         $items->save();
 
-        return redirect('/items');
+        return redirect()->action('ItemController@showItems')->with(['message' => 'The desired item has been successfully edited.', 'alert' => 'alert-warning']);;
     }
 
     public function navigateItem($id)

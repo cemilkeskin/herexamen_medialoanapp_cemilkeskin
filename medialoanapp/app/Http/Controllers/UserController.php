@@ -31,7 +31,7 @@ class UserController extends Controller
             'role' => $req->role,
             'password' => bcrypt($req->password),
         ]);
-        return redirect()->action('UserController@showUsers');
+        return redirect()->action('UserController@showUsers')->with(['message' => 'The user has been successfully created.', 'alert' => 'alert-success']);
     }
 
 //    public function navigateEdit(Request $req)
@@ -54,7 +54,6 @@ class UserController extends Controller
         $req->validate([
             'name'=>'required',
             'email'=>'required',
-            'password'=>'required',
             'role'=>'required',
 
         ]);
@@ -62,11 +61,11 @@ class UserController extends Controller
         $users = User::find($id);
         $users->name =  $req->get('name');
         $users->email = $req->get('email');
-        $users->password = bcrypt($req->get('password'));
         $users->role = $req->get('role');
         $users->save();
 
-        return redirect('/users');
+        return redirect()->action('UserController@showUsers')->with(['message' => 'The selected user has been successfully edited.', 'alert' => 'alert-warning']);;
+
     }
 
     public function deleteUser($id)
@@ -74,6 +73,6 @@ class UserController extends Controller
         $this->authorize('admin');
         $users = User::find($id);
         $users->delete();
-        return redirect('/users');
+        return redirect()->action('UserController@showUsers')->with(['message' => 'The user has been successfully deleted.', 'alert' => 'alert-danger']);
     }
 }

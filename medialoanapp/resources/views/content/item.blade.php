@@ -5,10 +5,6 @@
     <div class="container">
         @if(session()->has('message'))
 
-            {{--                <div class="alert alert-danger {{session('alert') ?? 'alert-info'}}">--}}
-            {{--                    {{ session('message') }}--}}
-            {{--                </div>--}}
-
             <div class="alert {{session('alert') ?? 'alert-info'}} fade show" role="alert ">
                 <strong>Firm handshakes!</strong>  {{ session('message') }}
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -17,9 +13,6 @@
             </div>
             <br>
 
-            {{--            <div class="alert alert-danger">--}}
-            {{--                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.--}}
-            {{--            </div>--}}
         @endif
 
         <div class="input-group">

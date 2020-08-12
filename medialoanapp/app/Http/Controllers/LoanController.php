@@ -69,11 +69,21 @@ class LoanController extends Controller
         }
     }
 
-    public function showUserLoans()
+    public function allLoans()
     {
         $this->authorize('uitleendienst');
         $loans = Loan::all();
         return view('content.allLoans', ['loans' => $loans]);
+    }
+
+    public function deleteLoan($id)
+    {
+        $this->authorize('uitleendienst');
+        $loans = Loan::find($id);
+
+            $loans->delete();
+            return redirect()->action('LoanController@allLoans')->with(['message' => 'The selected loan has been successfully deleted', 'alert' => 'alert-danger']);;
+
     }
 
 }

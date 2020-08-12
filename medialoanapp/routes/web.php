@@ -91,7 +91,7 @@ Route::group(['prefix' => 'items'], function(){
 });
 
 Route::group(['prefix' => 'loans'], function(){
-    Route::get('{id}', [
+    Route::get('myLoans/{id}', [
         'uses' => 'LoanController@showLoans',
         'as' => 'loans'
     ]);
@@ -101,14 +101,19 @@ Route::group(['prefix' => 'loans'], function(){
         'as' => 'createLoan'
     ]);
 
-    Route::get('showUserLoans', [
-        'uses' => 'LoanController@showUserLoans',
-        'as' => 'showUserLoans'
-    ]);
-
     Route::get('navigateEditLoan/{id}', [
         'uses' => 'LoanController@navigateEditLoan',
         'as' => 'navigateEditLoan'
+    ]);
+
+    Route::get('allLoans', [
+        'uses' => 'LoanController@allLoans',
+        'as' => 'allLoans'
+    ]);
+
+    Route::get('deleteLoan/{id}', [
+        'uses' => 'LoanController@deleteLoan',
+        'as' => 'deleteLoan'
     ]);
 
 });

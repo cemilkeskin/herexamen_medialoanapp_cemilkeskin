@@ -37,7 +37,7 @@
                                 <a class="nav-link" href="{{ route('items') }}">{{ __('Items') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('showUserLoans') }}">{{ __('Loans') }}</a>
+                                <a class="nav-link" href="{{ route('allLoans')}}">{{ __('Loans') }}</a>
                             </li>
                         @endcan
 

@@ -2,6 +2,19 @@
 
 @section('content')
     <div class="container">
+
+        @if(session()->has('message'))
+
+            <div class="alert {{session('alert') ?? 'alert-info'}} fade show" role="alert ">
+                <strong>Firm handshakes!</strong>  {{ session('message') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+
+        @endif
+
         <div class="row justify-content-center">
             <a href="{{ route('home') }}">
                 <img class="arrow" src="{{url('/images/arrow.svg')}}" alt="">
