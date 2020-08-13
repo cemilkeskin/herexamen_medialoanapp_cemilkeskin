@@ -107,6 +107,33 @@
        width: 55%;
     }
 
+    .numberCircle{
+
+        font: 12px Arial, sans-serif;
+        font-weight: 900;
+        width: 2em;
+        height: 2em;
+        box-sizing: initial;
+
+        background: black;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+
+        line-height: 2em;
+        box-sizing: content-box;
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+    }
+
+    .itemsleft{
+        position: absolute;
+        right: 12px;
+        bottom: 7px;
+        font-weight: 700;
+        color: #38c172;
+    }
     #disabled{
         cursor: not-allowed;
         pointer-events: none;

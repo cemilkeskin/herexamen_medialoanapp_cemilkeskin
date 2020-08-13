@@ -82,7 +82,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="additionalinfo" >{{ __('Item description') }}</label>
+                                <label for="additionalinfo" >{{ __('Additional info') }}</label>
 
                                 <input id="additionalinfo" type="text" class="form-control @error('name') is-invalid @enderror" name="additionalinfo" value="{{ $items->additionalinfo }}" rows="3" required autocomplete="additionalinfo" autofocus placeholder="Enter additional info about the item (damages to the item)">
 
@@ -98,7 +98,7 @@
                             <div class="form-group">
                                 <label for="itemsleft" >{{ __('Items available') }}</label>
 
-                                <input id="itemsleft" type="number" class="form-control @error('name') is-invalid @enderror" name="itemsleft" value="{{ $items->itemsleft }}" required autocomplete="itemsleft" autofocus placeholder="Enter the amount of items available">
+                                <input id="itemsleft" type="number" class="form-control @error('name') is-invalid @enderror" name="itemsleft" value="{{ $items->itemsleft }}" required autocomplete="itemsleft" autofocus placeholder="Enter the amount of items available" min="0">
 
 
                                 @error('name')

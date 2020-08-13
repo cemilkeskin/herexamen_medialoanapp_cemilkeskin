@@ -52,7 +52,7 @@
             <br>
             <p>{{$items->description}}</p>
             <br>
-                <a href="https://www.sony.co.uk/electronics/support/res/manuals/4581/45815344M.pdf" target="_blank">Instruction manual</a>
+                <a href="{{$items->instructions}}" target="_blank">Instruction manual</a>
                 <img style="width: 5%; margin-left: 7px" src="{{url('/images/pdf.svg')}}" alt="">
 
                 <!-- Button trigger modal -->

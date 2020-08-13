@@ -11,10 +11,10 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <br>
+
 
         @endif
-
+            <br>
         <div class="input-group">
         <div class="input-group-prepend">
             <span class="input-group-text" id="">Search an item</span>
@@ -22,6 +22,7 @@
         <input type="text" class="form-control">
 
     </div>
+            <br>
 
 
     @foreach($items as $item)
@@ -38,12 +39,21 @@
 
                 </div>
             </div>
+                @if($item->itemsleft == 1)
+                    <div class="itemsleft" style="color: orange">{{$item->itemsleft}} item left</div>
+                    @elseif($item->itemsleft == 0)
+                    <div class="itemsleft" style="color: #DE003D">{{$item->itemsleft}} items left</div>
+                @else
+                    <div class="itemsleft">{{$item->itemsleft}} items left</div>
+                    @endif
+
             @endcan
             <div class="card-body">
                 <h5 class="card-title">{{$item->name}}</h5>
                 <p class="card-text"> {{ \Illuminate\Support\Str::limit($item->description ,150,'...') }}</p>
                 @if (\Illuminate\Support\Str::length($item->description) > 150)
                     @can('uitleendienst')
+
                      <a class="readmore" id="disabled" href="{{ route('items') }}">Read more</a>
                     @endcan
 
@@ -62,7 +72,12 @@
                 @endif
 
                 @can('uitleendienst')
-                    <a href="#" class="btn btn-primary disabled" >Loan item</a>
+                    @if($item->itemsleft >=1)
+                        <a href="{{ route('navigateItem', $item->id) }}" class="btn btn-primary disabled" >Loan item</a>
+
+                    @else
+                        <a href="{{ route('navigateItem', $item->id) }}" class="btn btn-primary disabled">Not available</a>
+                    @endif
                 @endcan
 
                 @can('user')
