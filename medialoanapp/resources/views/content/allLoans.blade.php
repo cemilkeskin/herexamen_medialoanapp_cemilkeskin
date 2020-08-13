@@ -58,10 +58,10 @@
                                         <td>{{$loan->dateEnd}}</td>
                                         {{--                                        <td>{{$user->created_at}}</td>--}}
                                         {{--                                        <td>{{$user->updated_at}}</td>--}}
-                                        <td><a href="{{route('navigateEdit',$loan->id)}}">
+                                        <td><a href="{{route('navigateEditLoan',$loan->id)}}">
                                                 <img class="iconUser" src="{{url('/images/edit.svg')}}" alt="">
                                             </a></td>
-                                        <td><a onclick="return confirm('I hope you know what you are doing.')" href="{{route('deleteLoan', $loan->id )}}">
+                                        <td><a onclick="return confirm('I hope you know what you are doing.')" href="{{route('deleteLoan', [$loan->id, $loan->itemID] )}}">
                                                 <img class="iconUser" src="{{url('/images/cancel.svg')}}" alt="">
                                             </a></td>
 

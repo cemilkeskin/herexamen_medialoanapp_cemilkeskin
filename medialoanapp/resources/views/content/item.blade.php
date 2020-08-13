@@ -48,7 +48,14 @@
                     @endcan
 
                         @can('user')
-                            <a class="readmore"  href="{{ route('navigateItem', $item->id) }}">Read more</a>
+
+
+                            @if($item->itemsleft >=1)
+                                <a class="readmore"  href="{{ route('navigateItem', $item->id) }}">Read more</a>
+
+                            @else
+                                <a class="readmore" id="disabled" href="{{ route('items') }}">Read more</a>
+                            @endif
                         @endcan
                     <br>
                     <br>
@@ -59,7 +66,12 @@
                 @endcan
 
                 @can('user')
+                    @if($item->itemsleft >=1)
                 <a href="{{ route('navigateItem', $item->id) }}" class="btn btn-primary" >Loan item</a>
+
+                @else
+                        <a href="{{ route('navigateItem', $item->id) }}" class="btn btn-primary disabled">Not available</a>
+                    @endif
                 @endcan
             </div>
         </div>

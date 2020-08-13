@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="USER FOCUSED UPDATE: items page voor uitleendienst en user gemaakt, uitleendienst kan niet op loan drukken maar user wel, user kan een item lenen, DATA KAN NIET GEMANIPULEERD WORDEN, alles wordt direct van databank genomen">
+      <change afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/editloan.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/ItemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/LoanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/LoanController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/allLoans.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/allLoans.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/edituser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/edituser.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +193,9 @@
       <workItem from="1596977802150" duration="10366000" />
       <workItem from="1597018176530" duration="7000" />
       <workItem from="1597148556606" duration="20375000" />
-      <workItem from="1597229667979" duration="2269000" />
+      <workItem from="1597229667979" duration="2928000" />
+      <workItem from="1597261986043" duration="677000" />
+      <workItem from="1597330217349" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="Testing git">
       <created>1596483135369</created>
@@ -255,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597173919706</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed a bug where the uitleendienst couldn't check the loans made, authorization rabbithole">
+      <created>1597231997023</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597231997023</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +288,8 @@
     <MESSAGE value="Uitleendienst gemaakt CRUD acties ALLES gemaakt, detailed pagina nog maken wanneer je op de kaart drukt, BOOTSTRAP ROCKS" />
     <MESSAGE value="USER FOCUSED UPDATE: items page voor uitleendienst en user gemaakt, uitleendienst kan niet op loan drukken maar user wel, user kan een item lenen, DATA KAN NIET GEMANIPULEERD WORDEN, alles wordt direct van databank genomen" />
     <MESSAGE value="User focused update, user can loan various items and check them out, alerts when creating and item, duplicate error if not success, if empty alert,..." />
-    <option name="LAST_COMMIT_MESSAGE" value="User focused update, user can loan various items and check them out, alerts when creating and item, duplicate error if not success, if empty alert,..." />
+    <MESSAGE value="Fixed a bug where the uitleendienst couldn't check the loans made, authorization rabbithole" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug where the uitleendienst couldn't check the loans made, authorization rabbithole" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596810518018">
@@ -306,10 +312,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596728259807" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597173921163">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597232000043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597173921163" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597232000043" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

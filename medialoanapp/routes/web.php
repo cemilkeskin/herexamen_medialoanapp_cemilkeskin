@@ -111,9 +111,14 @@ Route::group(['prefix' => 'loans'], function(){
         'as' => 'allLoans'
     ]);
 
-    Route::get('deleteLoan/{id}', [
+    Route::get('deleteLoan/{id}{id2}', [
         'uses' => 'LoanController@deleteLoan',
         'as' => 'deleteLoan'
+    ]);
+
+    Route::post('editLoan/{id}', [
+        'uses' => 'LoanController@editLoan',
+        'as' => 'editLoan'
     ]);
 
 });

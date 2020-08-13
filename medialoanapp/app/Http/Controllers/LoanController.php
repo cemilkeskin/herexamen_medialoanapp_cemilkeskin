@@ -51,6 +51,13 @@ class LoanController extends Controller
                 'comments' => $req->comments,
             ]);
 
+            if($items->itemsleft >= 1){
+                $items->itemsleft = $items->itemsleft -1;
+                $items->save();
+            }else{
+
+            }
+
             return redirect()->action('ItemController@showItems')->with(['message' => 'Your loan has been created, for more information check the "my loans" tab', 'alert' => 'alert-success']);;
         }
 
@@ -76,14 +83,47 @@ class LoanController extends Controller
         return view('content.allLoans', ['loans' => $loans]);
     }
 
-    public function deleteLoan($id)
+    public function deleteLoan($id, $id2)
     {
         $this->authorize('uitleendienst');
         $loans = Loan::find($id);
+        $items = Item::find($id2);
 
-            $loans->delete();
-            return redirect()->action('LoanController@allLoans')->with(['message' => 'The selected loan has been successfully deleted', 'alert' => 'alert-danger']);;
+        $items->itemsleft = $items->itemsleft +1;
+        $items->save();
 
+        $loans->delete();
+
+        return redirect()->action('LoanController@allLoans')->with(['message' => 'The selected loan has been successfully deleted', 'alert' => 'alert-danger']);;
+
+    }
+
+    public function navigateEditLoan($id)
+    {
+        $this->authorize('uitleendienst');
+        $loans = Loan::find($id);
+        return view('content.editloan', ['loans' => $loans]);
+    }
+
+    public function editLoan(Request $req, $id)
+    {
+        $this->authorize('uitleendienst');
+        $req->validate([
+            'extendLoan'=>'required',
+        ]);
+
+        $loans = Loan::find($id);
+
+        $date = strtotime($req->dateStart);
+        $date = strtotime("+7 day", $date);
+
+        $date = strtotime($loans->dateStart);
+        $dateEnd = $req->get('extendLoan');
+        $date = strtotime('+ '.$dateEnd.' week', $date);
+        $loans->dateEnd =  date('Y-m-d', $date);
+        $loans->save();
+
+        return redirect()->action('LoanController@allLoans')->with(['message' => 'The selected loan has been successfully edited', 'alert' => 'alert-warning']);;
     }
 
 }
