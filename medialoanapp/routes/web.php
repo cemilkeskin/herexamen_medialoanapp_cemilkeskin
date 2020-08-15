@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'UserController@navigateAbout')->name('about');
 
 Route::group(['prefix' => 'users'], function(){
     Route::get('', [
@@ -96,7 +97,7 @@ Route::group(['prefix' => 'loans'], function(){
         'as' => 'loans'
     ]);
 
-    Route::post('createLoan/{id}{id2}', [
+    Route::post('createLoan/{id}/{id2}', [
         'uses' => 'LoanController@createLoan',
         'as' => 'createLoan'
     ]);
@@ -111,7 +112,7 @@ Route::group(['prefix' => 'loans'], function(){
         'as' => 'allLoans'
     ]);
 
-    Route::get('deleteLoan/{id}{id2}', [
+    Route::get('deleteLoan/{id}/{id2}', [
         'uses' => 'LoanController@deleteLoan',
         'as' => 'deleteLoan'
     ]);

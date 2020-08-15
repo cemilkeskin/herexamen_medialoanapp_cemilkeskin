@@ -99,6 +99,7 @@
         @can('uitleendienst')
     <a href="{{ route('navigateCreate') }}" class="btn btn-success">Create item</a>
         @endcan
+
     </div>
 
 

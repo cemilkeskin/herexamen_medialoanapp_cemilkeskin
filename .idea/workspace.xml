@@ -20,11 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a51b2618-32f4-4c60-a77a-1d1c8bc47397" name="Default Changelist" comment="USER FOCUSED UPDATE: items page voor uitleendienst en user gemaakt, uitleendienst kan niet op loan drukken maar user wel, user kan een item lenen, DATA KAN NIET GEMANIPULEERD WORDEN, alles wordt direct van databank genomen">
+      <change afterPath="$PROJECT_DIR$/medialoanapp/database/seeds/UserSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medialoanapp/public/images/backgempty.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/edititem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/edititem.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/item.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/content/navigateitem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/content/navigateitem.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/layouts/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/resources/views/other/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/resources/views/other/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medialoanapp/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/medialoanapp/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,17 +163,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\admin" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\other" />
-      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\partials" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public\images" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\layouts" />
       <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\content" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\public" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\admin" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\other" />
+      <recent name="D:\SCHOOL\MULTEC 2\_GIT\BACKEND\Medialoanapp_Werkstuk_Cemil\medialoanapp\resources\views\partials" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -194,7 +198,10 @@
       <workItem from="1597148556606" duration="20375000" />
       <workItem from="1597229667979" duration="2928000" />
       <workItem from="1597261986043" duration="677000" />
-      <workItem from="1597330217349" duration="7135000" />
+      <workItem from="1597330217349" duration="7446000" />
+      <workItem from="1597349347861" duration="1778000" />
+      <workItem from="1597431507644" duration="2874000" />
+      <workItem from="1597524293319" duration="5341000" />
     </task>
     <task id="LOCAL-00001" summary="Testing git">
       <created>1596483135369</created>
@@ -266,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597339573093</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Made some small ui changes, unsure about design part, looks more ugly, but good functionality in on ui side">
+      <created>1597345033187</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597345033187</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +310,8 @@
     <MESSAGE value="User focused update, user can loan various items and check them out, alerts when creating and item, duplicate error if not success, if empty alert,..." />
     <MESSAGE value="Fixed a bug where the uitleendienst couldn't check the loans made, authorization rabbithole" />
     <MESSAGE value="My favorite update: uitleendienst can extend a loan by weeks, when a user loans an item, the item availability drops by 1 and if it reaches 0, the loan button becomes disabled (not available), and when the loan is done, when the uitleendienst deleted the loan, it goes up by 1 and it is available again!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="My favorite update: uitleendienst can extend a loan by weeks, when a user loans an item, the item availability drops by 1 and if it reaches 0, the loan button becomes disabled (not available), and when the loan is done, when the uitleendienst deleted the loan, it goes up by 1 and it is available again!!!!!" />
+    <MESSAGE value="Made some small ui changes, unsure about design part, looks more ugly, but good functionality in on ui side" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made some small ui changes, unsure about design part, looks more ugly, but good functionality in on ui side" />
   </component>
   <component name="WindowStateProjectService">
     <state x="717" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596810518018">
@@ -307,22 +322,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596566011403" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596988305991">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597529890445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596988305991" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597529890445" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596649222379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596649222379" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1596728259807">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1597525065379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596728259807" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597339577375">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1597525065379" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597345035181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597339577375" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597345035181" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1596483096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

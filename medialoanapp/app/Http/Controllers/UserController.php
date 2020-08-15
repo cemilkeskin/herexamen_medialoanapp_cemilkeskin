@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
+    public function navigateAbout()
+    {
+        return view('other.about');
+    }
+
     public function showUsers()
     {
         $this->authorize('admin');
